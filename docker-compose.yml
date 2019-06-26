@@ -9,8 +9,9 @@ services:
     working_dir: /workspace
     ports:
       - 3001:3000
+    entrypoint: npm
     command:
-      - npm run start
+      - start
     
   elixir:
     build:
