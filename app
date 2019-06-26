@@ -1,2 +1,3 @@
-#!/bin/sh
-ARGS=$@ make docker-typescript-run
+#!/usr/bin/env bash
+
+ARGS="$@" make docker-typescript-run

@@ -6,7 +6,7 @@ services:
     volumes:
       - ./src:/workspace
       - node_modules:/workspace/node_modules
-    workdir: /workspace
+    working_dir: /workspace
     
   elixir:
     build:
