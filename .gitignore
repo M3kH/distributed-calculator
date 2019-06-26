@@ -1,6 +1,7 @@
 .cache/
 .elixir_ls/
 .fetch/
+src/node_modules/
 .hex/
 .mix/
 _build/

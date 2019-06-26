@@ -1,6 +1,11 @@
 version: "2.4"
 
 services:
+  typescript:
+    build: ./docker
+    volumes:
+      - ./src:/workspace
+    
   elixir:
     build:
       context: .
