@@ -6,7 +6,7 @@ app.get('/divide/:dividend/:divisor', (req, res) => {
     return res.status(200).send((req.params.dividend / req.params.divisor).toLocaleString());
 });
 
-app.get('/pong', (req, res) => {
+app.get('/ping', (req, res) => {
     return res.status(200).send('pong');
 });
 
