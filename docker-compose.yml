@@ -5,6 +5,7 @@ services:
     build: ./docker
     volumes:
       - ./src:/workspace
+    workspace: /workspace
     
   elixir:
     build:

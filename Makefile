@@ -51,3 +51,6 @@ dshell:
 dclean:
 	@docker-compose down -v
 	@rm -rf _build deps .hex .mix .cache .bash_history
+
+docker-typescript-run:
+	@docker-compose run typescript $@
