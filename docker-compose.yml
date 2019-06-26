@@ -5,6 +5,7 @@ services:
     build: ./docker
     volumes:
       - ./src:/workspace
+      - node_modules:/workspace/node_modules
     workspace: /workspace
     
   elixir:
@@ -73,3 +74,6 @@ services:
       INFLUXDB_HOST: http://influxdb:8086
       INFLUXDB_DATABASE: tracing
       INFLUXDB_RETENTION_POLICY: tracing
+
+volumes:
+  node_modules:
