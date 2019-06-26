@@ -8,7 +8,9 @@ services:
       - node_modules:/workspace/node_modules
     working_dir: /workspace
     ports:
-      - 3000
+      - 3001:3000
+    command:
+      - npm run start
     
   elixir:
     build:
